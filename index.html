@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="pl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Finance manager</title>
+
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:200,400,700&display=swap&subset=latin-ext"
+        rel="stylesheet">
+
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/327a0d490c.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+
+    <div class="corner">
+        <p>Dark mode</p>
+        <label class="switch">
+            <input class="in-switch" type="checkbox">
+            <span class="slider round"></span>
+        </label>
+        <p>Instruction <i class="fas fa-info info"></i></p>
+        
+    </div>
+    
+    <div class="main-header">
+        <h1 class="icons"><i class="fas fa-credit-card icon"></i><i class="fas fa-coins icon"></i><i class="fas fa-comment-dollar icon"></i></h1>
+        <h1> Finance Manager </h1>
+    </div>
+
+    <div class="wallet">
+
+        <h2>Available funds</h2>
+
+        <p class="money">0.00</p>
+
+        <select name="select1" id="select1">
+            <option value="PLN">PLN</option>
+            <option value="EUR">EUR</option>
+            <option value="USD">USD</option>
+            <option value="GBP">GBP</option>
+        </select>
+
+
+        <div class="buttons-wallet">
+            <button class="add-button"><i class="fas fa-plus-circle plus-icon"></i> Add</button>
+            <button class="delete-button"><i class="fas fa-trash delete-icon"></i> Delete all</button>
+        </div>
+
+
+        <h2>History</h2>
+
+        <div class="history-container">
+
+            <div class="history-leftside">
+                <h3>Proceeds:</h3>
+                 <div class="transaction"> 
+                    <!-- <p class="title">name</p> -->
+                    <!-- <p class="value">1000 zł <button><i class="far fa-times-circle"></i></button></p> -->
+                </div>
+            </div>
+
+            <div class="history-rightside">
+                <h3>expenses:</h3>
+                <div class="transaction"> 
+                    <!-- <p class="title">name</p> -->
+                    <!-- <p class="value">1000 zł <button><i class="far fa-times-circle"></i></button></p> -->
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+
+    <div class="shadow1"> 
+        <div class="wrapper">
+            
+            <div class="menu">
+                <label for="select2">Category selection</label>
+                <select name="select2" id="select2" >  
+                    <option value="category" name="category" disabled selected>category</option>  
+                    <option value="proceed" name="shopping">proceed</option>                       
+                    <option value="expense" name="work">expence</option>
+                </select>
+
+                <label for="in-title">Title</label>
+                <input type="text" id="in-title">
+                <label for="in-title">Value</label>
+                <input type="number" id="in-value">
+                
+                <p class="error ">error</p>
+    
+                <div class="buttons-menu">
+                    <button class="button-save"><i class="far fa-save save-icon"></i> Save</button>
+                    <button class="button-close"><i class="far fa-window-close close-icon"></i> Cancel</button>
+                </div>
+            </div>    
+        </div>
+    </div>
+
+
+    <script src="script.js"></script>
+</body>
+
+</html>
